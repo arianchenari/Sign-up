@@ -58,13 +58,18 @@
     margin-bottom: 16px;
 }
 
-.circle1, .circle2, .circle3, .circle4{
+.selection{
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background-color: #A5EDA5;
     cursor: pointer;
     border: none;
+    transition: 0.5;
+}
+
+.selection:hover{
+    transform: scale(1.2);
 }
 
 .checked{
