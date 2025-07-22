@@ -1,0 +1,74 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.feature-section-container{
+    background: linear-gradient(to bottom,#379847, #68BD68);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    position: relative;
+}
+
+.logo-company{
+    font-size: 32px;
+    font-family: 700;
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.CTA-cart{
+    width: 580px;
+    padding: 16px;
+    border: 1px solid #37984779;
+    background-color: #37984779;
+    border-radius: 30px;
+}
+
+.user-information{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.username-job{
+    display: flex;
+    flex-direction: column;
+}
+
+.person-image{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.selectors-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.circle1, .circle2, .circle3, .circle4{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #A5EDA5;
+    cursor: pointer;
+    border: none;
+}
+
+.checked{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+
+
+
