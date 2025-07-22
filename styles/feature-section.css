@@ -13,13 +13,17 @@
     font-size: 32px;
     font-family: 700;
     position: absolute;
-    bottom: 60%;
+    bottom: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.CTA-header{
-    color: #fff;
+.CTA-container{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .CTA-cart{
