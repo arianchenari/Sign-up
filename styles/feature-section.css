@@ -1,8 +1,3 @@
-body{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 .feature-section-container{
     background: linear-gradient(to bottom,#379847, #68BD68);
     height: 100vh;
@@ -21,6 +16,10 @@ body{
     bottom: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.CTA-header{
+    color: #fff;
 }
 
 .CTA-cart{
