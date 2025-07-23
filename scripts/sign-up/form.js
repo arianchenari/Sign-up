@@ -1,0 +1,1 @@
+import {usersInfo} from '../data/users-informations.js';

@@ -44,7 +44,7 @@ input:focus{
     border: 1px solid #379837;
 }
 
-.btn{
+.btn-submit{
     cursor: pointer;
     font-size: 14px;
     letter-spacing: 1.1px;
@@ -61,6 +61,6 @@ input:focus{
     transition: 0.5s;
 }
 
-.btn:hover{
+.btn-submit:hover{
     box-shadow: 1px 1px 2px #379837;
 }
