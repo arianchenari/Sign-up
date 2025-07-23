@@ -17,7 +17,7 @@ export const usersInfo = [{
     comment: 'so how many kilos are u ? stciker<:pishi:> best world advisor',
     id: '3'
 }, {
-   name: 'Arian Chenari',
+    name: 'Arian Chenari',
     job: 'Friend of koskeshe',
     image: 'images/arian-personal-image.jpg',
     comment: 'i don`t know why shahin is my friend :/ so what you think about him ?! can u shower cold wather?',

@@ -1,14 +1,15 @@
-import { usersInfo } from "./data/users-informations.js";
+import { usersInfo } from "../data/users-informations.js";
 
 renderCarts();
 
 function renderCarts() {
     let cartsHTML = '';
     let buttonsHTML = '';
+    let lengthOfButtons = 0;
 
     usersInfo.forEach((user, index) => {
         cartsHTML +=`
-            <div class="CTA-cart js-CTA-cart-${user.id} js-display-cart">
+            <div class="CTA-cart js-CTA-cart-${user.id}">
                 <div class="user-information">
                     <img src="${user.image}" class="person-image">
                     <div class="username-job">
@@ -23,6 +24,7 @@ function renderCarts() {
             buttonsHTML +=`
             <button class="selection js-selection js-selection-${user.id}" data-user-id="${user.id}"></button>
             `;
+            lengthOfButtons++;
         };
     });
 
@@ -33,6 +35,21 @@ function renderCarts() {
       .innerHTML = buttonsHTML;
 
     showCart(usersInfo[0].id);
+
+    let index = 1;
+    let setIntervalId;
+    autoShowCarts();
+    function autoShowCarts(){
+        setIntervalId = setInterval(() => {
+            clearInterval(setIntervalId);
+            showCart(usersInfo[index].id);
+            index++;
+            autoShowCarts();
+        }, 4000);
+        if(index >= lengthOfButtons)
+        index = 0;
+    }
+
     function showCart(userId) {
         removesShowCarts();
         document.querySelector(`.js-selection-${userId}`).classList.add('checked');
@@ -54,6 +71,8 @@ function renderCarts() {
     document.querySelectorAll('.js-selection').forEach((button) => {
         button.addEventListener('click', () => {
             const userId = button.dataset.userId;
+            clearInterval(setIntervalId);
+            autoShowCarts();
             showCart(userId);
         });
     });
