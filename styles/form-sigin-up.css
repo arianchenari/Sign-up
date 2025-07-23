@@ -44,6 +44,23 @@ input:focus{
     border: 1px solid #379837;
 }
 
+.btn-message-container{
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+}
+
+.error-message{
+    font-size: 10px;
+    font-weight: 300;
+    color: #484646;
+}
+
+.error-message:hover{
+    text-decoration: underline;
+    text-decoration-color: #48464695;
+}
+
 .btn-submit{
     cursor: pointer;
     font-size: 14px;
@@ -54,10 +71,6 @@ input:focus{
     border-radius: 16px;
     outline: none;
     padding: 5px 35px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translateY(145%);
     transition: 0.5s;
 }
 

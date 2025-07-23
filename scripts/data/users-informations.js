@@ -1,21 +1,28 @@
 class Users {
     name;
-    password;
     email;
+    password;
     job;
     image;
     comment;
     id;
 
     constructor(user) {
-        this.name = user.name;
-        this.password = user.password;
+        this.name = user.name
         this.email = user.email;
+        this.password = user.password;
         this.job = user.job;
         this.image = user.image;
         this.comment = user.comment;
         this.id = user.id;
-    };
+    }
+
+};
+
+export function addNewUser(newUserInfo) {
+    let newUser = new Users(newUserInfo)
+    usersInfo.push(newUser);
+    console.log(usersInfo);
 };
 
 export const usersInfo = [{
